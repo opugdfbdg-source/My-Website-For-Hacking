@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background:
+        radial-gradient(circle at top, #252525 0%, #0b0b0b 45%, #000 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    width: 94%;
+    max-width: 850px;
+    margin: auto;
+    padding: 20px 0 40px;
+}
+
+
+/* HEADER */
+
+.hero {
+    text-align: center;
+    padding: 32px 15px;
+    margin-bottom: 22px;
+
+    border: 1px solid #333;
+    border-radius: 22px;
+
+    background: rgba(18, 18, 18, 0.94);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, .7),
+        inset 0 0 30px rgba(255,255,255,.02);
+}
+
+.hero-title {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.hero-subtitle {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+/* CARDS */
+
+.card {
+    background: rgba(17, 17, 17, .95);
+
+    border: 1px solid #303030;
+    border-radius: 20px;
+
+    padding: 20px;
+    margin-bottom: 18px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.55);
+
+    transition: .3s;
+}
+
+.card:hover {
+    border-color: #555;
+    transform: translateY(-2px);
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+
+/* ITEMS */
+
+.item {
+    background: #0c0c0c;
+
+    border: 1px solid #292929;
+    border-radius: 15px;
+
+    padding: 17px;
+    margin-top: 13px;
+}
+
+.item-title {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.8;
+}
+
+.item-description {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.9;
+
+    margin: 5px 0 14px;
+}
+
+
+/* ALL DOWNLOAD BUTTONS */
+
+.download-btn,
+.social-btn,
+.contact-btn {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    transition: .25s;
+
+    cursor: pointer;
+}
+
+
+/* DOWNLOAD */
+
+.download-btn {
+    background: #fff;
+    color: #000;
+}
+
+.download-btn:hover {
+    background: #ddd;
+    transform: scale(1.02);
+}
+
+
+/* SOCIAL */
+
+.social-btn {
+    background: #101010;
+    color: #fff;
+
+    border: 1px solid #353535;
+
+    margin-top: 12px;
+}
+
+.social-btn:hover {
+    background: #202020;
+    border-color: #666;
+    transform: translateY(-2px);
+}
+
+
+/* CONTACT */
+
+.contact-box {
+    text-align: center;
+
+    background: #0b0b0b;
+
+    border: 1px solid #292929;
+
+    border-radius: 16px;
+
+    padding: 22px;
+}
+
+.contact-title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.contact-description {
+    color: #aaa;
+    font-size: 14px;
+    margin: 8px 0 18px;
+}
+
+.contact-btn {
+    background: #fff;
+    color: #000;
+}
+
+.contact-btn:hover {
+    background: #ddd;
+    transform: scale(1.02);
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    padding: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        padding-top: 12px;
+    }
+
+    .hero {
+        padding: 26px 10px;
+    }
+
+    .hero-title {
+        font-size: 21px;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 15px;
+        border-radius: 17px;
+    }
+
+    .card h2 {
+        font-size: 17px;
+    }
+
+    .item-title {
+        font-size: 15px;
+    }
+
+    .download-btn,
+    .social-btn,
+    .contact-btn {
+        font-size: 14px;
+    }
+}
