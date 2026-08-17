@@ -13,7 +13,9 @@ html {
 body {
     font-family: 'Cairo', sans-serif;
     background:
-        radial-gradient(circle at top, #252525 0%, #0b0b0b 45%, #000 100%);
+        radial-gradient(circle at 15% 0%, #24104f 0%, transparent 35%),
+        radial-gradient(circle at 85% 10%, #063d52 0%, transparent 35%),
+        linear-gradient(135deg, #05020d 0%, #080b18 50%, #020409 100%);
     color: #fff;
     min-height: 100vh;
 }
@@ -33,23 +35,27 @@ body {
     padding: 32px 15px;
     margin-bottom: 22px;
 
-    border: 1px solid #333;
+    border: 1px solid #6336a8;
     border-radius: 22px;
 
-    background: rgba(18, 18, 18, 0.94);
+    background: rgba(12, 8, 27, 0.94);
 
     box-shadow:
-        0 10px 35px rgba(0, 0, 0, .7),
-        inset 0 0 30px rgba(255,255,255,.02);
+        0 10px 40px rgba(98, 45, 180, .25),
+        inset 0 0 35px rgba(0, 217, 255, .04);
 }
 
 .hero-title {
     font-size: 28px;
     font-weight: 800;
+
+    background: linear-gradient(90deg, #b66cff, #00d9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
-    color: #aaa;
+    color: #a9a2bd;
     font-size: 14px;
     margin-top: 8px;
 }
@@ -58,51 +64,68 @@ body {
 /* CARDS */
 
 .card {
-    background: rgba(17, 17, 17, .95);
+    background: rgba(11, 8, 23, .95);
 
-    border: 1px solid #303030;
+    border: 1px solid #302052;
     border-radius: 20px;
 
     padding: 20px;
     margin-bottom: 18px;
 
-    box-shadow: 0 8px 30px rgba(0,0,0,.55);
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.55),
+        0 0 20px rgba(99, 54, 168, .08);
 
     transition: .3s;
 }
 
 .card:hover {
-    border-color: #555;
+    border-color: #7c4dca;
     transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.6),
+        0 0 25px rgba(124, 77, 202, .15);
 }
 
 .card h2 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 18px;
+
+    color: #e9ddff;
 }
 
 
 /* ITEMS */
 
 .item {
-    background: #0c0c0c;
+    background:
+        linear-gradient(135deg, #0d0918, #090c17);
 
-    border: 1px solid #292929;
+    border: 1px solid #2d2345;
     border-radius: 15px;
 
     padding: 17px;
     margin-top: 13px;
+
+    transition: .25s;
+}
+
+.item:hover {
+    border-color: #60409a;
 }
 
 .item-title {
     font-size: 17px;
     font-weight: 800;
     line-height: 1.8;
+
+    color: #ffffff;
 }
 
 .item-description {
-    color: #aaa;
+    color: #a8a2b5;
     font-size: 13px;
     line-height: 1.9;
 
@@ -110,7 +133,7 @@ body {
 }
 
 
-/* ALL DOWNLOAD BUTTONS */
+/* ALL BUTTONS */
 
 .download-btn,
 .social-btn,
@@ -139,31 +162,44 @@ body {
 /* DOWNLOAD */
 
 .download-btn {
-    background: #fff;
-    color: #000;
+    background: linear-gradient(90deg, #8b45ff, #00cfff);
+    color: #fff;
+
+    border: 0;
+
+    box-shadow:
+        0 5px 20px rgba(139, 69, 255, .25);
 }
 
 .download-btn:hover {
-    background: #ddd;
     transform: scale(1.02);
+
+    box-shadow:
+        0 7px 25px rgba(0, 207, 255, .3);
 }
 
 
 /* SOCIAL */
 
 .social-btn {
-    background: #101010;
-    color: #fff;
+    background: #0c0a16;
+    color: #d9c9ff;
 
-    border: 1px solid #353535;
+    border: 1px solid #352755;
 
     margin-top: 12px;
 }
 
 .social-btn:hover {
-    background: #202020;
-    border-color: #666;
+    background: #171127;
+    border-color: #7551b5;
+
+    color: #fff;
+
     transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 18px rgba(117, 81, 181, .15);
 }
 
 
@@ -172,34 +208,45 @@ body {
 .contact-box {
     text-align: center;
 
-    background: #0b0b0b;
+    background:
+        radial-gradient(circle at top, #17102c, #080711);
 
-    border: 1px solid #292929;
+    border: 1px solid #49316e;
 
     border-radius: 16px;
 
     padding: 22px;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.5);
 }
 
 .contact-title {
     font-size: 20px;
     font-weight: 800;
+
+    color: #e9ddff;
 }
 
 .contact-description {
-    color: #aaa;
+    color: #aaa2b8;
     font-size: 14px;
     margin: 8px 0 18px;
 }
 
 .contact-btn {
-    background: #fff;
-    color: #000;
+    background: linear-gradient(90deg, #00cfff, #8b45ff);
+    color: #fff;
+
+    box-shadow:
+        0 5px 20px rgba(0, 207, 255, .2);
 }
 
 .contact-btn:hover {
-    background: #ddd;
     transform: scale(1.02);
+
+    box-shadow:
+        0 7px 25px rgba(139, 69, 255, .3);
 }
 
 
@@ -208,7 +255,7 @@ body {
 footer {
     text-align: center;
 
-    color: #777;
+    color: #716a80;
 
     font-size: 13px;
 
@@ -257,4 +304,4 @@ footer {
     .contact-btn {
         font-size: 14px;
     }
-}
+    }
